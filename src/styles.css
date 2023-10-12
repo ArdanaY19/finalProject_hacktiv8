@@ -1,0 +1,403 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    height: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    object-fit: cover;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+}
+
+.content h1 {
+    font-size: 3em;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    margin: 0;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.slider img {
+    object-fit: cover;
+}
+
+
+/* about */
+.about-background {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+}
+
+.about-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+/* education */
+.education-background {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    max-width: 800px;
+}
+
+.education-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.education-list {
+    list-style-type: decimal;
+    padding: 0;
+}
+
+.education-item {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.education-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    margin: 0;
+}
+
+
+/* skills */
+.skills-background {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    max-width: 800px;
+}
+
+.skills-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hard-skills,
+.soft-skills {
+    width: 45%;
+}
+
+.hard-skills h2,
+.soft-skills h2 {
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: decimal;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+/* experience */
+.experience-background {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    max-width: 800px;
+}
+
+.experience-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.experience-list {
+    list-style-type: decimal;
+    padding: 0;
+}
+
+.experience-item {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.experience-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.experience-item p {
+    margin: 0;
+}
+
+
+
+
+/* interest */
+.interest-background {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interest-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    max-width: 800px;
+}
+
+.interest-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.interest-list {
+    list-style: disc;
+    padding: 0;
+}
+
+.interest-item {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.interest-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.interest-item p {
+    margin: 0;
+}
+
+
+/* awards */
+.awards-background {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awards-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    max-width: 800px;
+}
+
+.awards-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.awards-list {
+    list-style-type: decimal;
+    padding: 0;
+}
+
+.awards-item {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.awards-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.awards-item p {
+    margin: 0;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0 50px 0;
+    text-align: center;
+}
+
+.contact-me h2,
+.email-signup h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.email-signup input,
+.email-signup button {
+    font-size: 1em;
+    padding: 10px;
+    margin: 5px;
+}
+
+.email-signup input {
+    width: 70%;
+}
+
+.email-signup button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.email-signup button:hover {
+    background-color: #3498db;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.contact-info {
+    display: flex;
+}
+
+.contact-button {
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+}
+
+.contact-button:hover {
+    cursor: pointer;
+}
+
+.popup {
+    position: absolute;
+    background: #fff;
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: none;
+}
+
+.contact-button:hover .popup {
+    display: block;
+}
